@@ -6,7 +6,7 @@ export default function Home() {
       <div className="container grid two-col">
         <div className="hero-content">
           <p className="eyebrow">💻 Full-Stack Web Developer | Freelancer</p>
-          <h1>👋 Hi, I’m Your Name</h1>
+          <h1>👋 Hi, I’m Dev Star</h1>
           <p className="lead">I build modern, responsive, and scalable web applications. Let’s turn your ideas into reality 🚀</p>
           <div className="cta-group">
             <Link to="/contact" className="btn btn-primary">Hire Me</Link>

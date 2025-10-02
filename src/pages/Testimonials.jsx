@@ -1,3 +1,6 @@
+import { testimonials } from "../data/testimonials"
+
+testimonials
 export default function Testimonials() {
   return (
     <section className="section">
@@ -7,18 +10,15 @@ export default function Testimonials() {
           <p>Coming soon — adding client feedback as projects ship.</p>
         </div>
         <div className="grid two-col">
-          <article className="card testimonial">
-            <blockquote>
-              <p>“Working with Your Name was a breeze. We shipped faster than expected.”</p>
-            </blockquote>
-            <p className="muted">— Placeholder Client</p>
-          </article>
-          <article className="card testimonial">
-            <blockquote>
-              <p>“Incredible attention to detail and communication throughout the project.”</p>
-            </blockquote>
-            <p className="muted">— Placeholder Client</p>
-          </article>
+          {
+            testimonials.map(test=>(
+              <article className="card testimonial">
+                  <p>"{test.content}"</p>
+                <p className="muted">{test.title}</p>
+              </article>
+            ))
+          }
+          
         </div>
       </div>
     </section>
